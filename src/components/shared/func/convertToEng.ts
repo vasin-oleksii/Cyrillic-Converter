@@ -1,5 +1,5 @@
 const convertToEng = (text: string) => {
-  const cirilic = text.split("").map((letter, i) => {
+  const cirilic = text.split("").map((letter) => {
     switch (letter.toLowerCase()) {
       case "a":
         return "ф";
