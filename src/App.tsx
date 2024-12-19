@@ -1,23 +1,25 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
+import Convertor from "./pages/Home/Convertor/Convertor";
 
 function App() {
   return (
-    <Box
-      bgcolor="black"
-      display="flex"
-      alignItems="center"
-      justifyContent="center"
-      height="100vh"
-      p="0px"
-    >
-      <Box>
-        <Typography color="text.primary">Hello from</Typography>
-        <Typography component="h1" color="textPrimary" fontSize="100px">
-          Cyrillic-Converter
-        </Typography>
-      </Box>
+    <Box sx={box}>
+      <Header />
+      <Convertor />
+      <Footer />
     </Box>
   );
 }
 
 export default App;
+
+const box = {
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "space-between",
+  height: "98vh",
+  p: "0px",
+  flexDirection: "column",
+};
